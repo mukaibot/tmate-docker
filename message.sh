@@ -10,5 +10,12 @@ echo set -g tmate-server-rsa-fingerprint   \"$RSA\"
 echo set -g tmate-server-dsa-fingerprint   \"$DSA\"
 echo set -g tmate-server-ecdsa-fingerprint   \"$ECDSA\"
 echo set -g tmate-identity ""              # Can be specified to use a different SSH key.
+logger Add this to your ~/.tmate.conf file
+logger set -g tmate-server-host "<server ip/hostname>"
+logger set -g tmate-server-port \<server port\>
+logger set -g tmate-server-rsa-fingerprint   \"$RSA\"
+logger set -g tmate-server-dsa-fingerprint   \"$DSA\"
+logger set -g tmate-server-ecdsa-fingerprint   \"$ECDSA\"
+logger set -g tmate-identity ""              # Can be specified to use a different SSH key.
 
 touch /tmp/message.sh
